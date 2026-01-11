@@ -65,7 +65,7 @@ function About(){
         scrub:2,
         // markers:true,
         start:"top 70%",
-        end:"top 40%"
+        end:"top 50%"
       }
   })
   gsap.from(".rightabout",{
