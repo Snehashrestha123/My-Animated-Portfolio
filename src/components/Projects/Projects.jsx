@@ -5,8 +5,42 @@ import portfolio from '../../assets/portfolio.png'
 import onlinefoodordering from '../../assets/onlinefoodordering.png'
 import restaurant from '../../assets/restaurant.png'
 import digitalclock from '../../assets/digitalclock.png'
+import {useGSAP} from "@gsap/react"
+import gsap from "gsap"
+import { ScrollTrigger } from 'gsap/all'
+gsap.registerPlugin(ScrollTrigger)
 
 function Projects() {
+useGSAP(()=>{
+  gsap.from("#para",{
+    y:100,
+    duration:1,
+      opacity:0,
+      stagger:1,
+      scrollTrigger:{
+        trigger:"#para",
+        // scroll:"body",
+        scrub:2,
+        // markers:true,
+        start:"top 60%",
+        end:"top 30%"
+      }
+  })
+   gsap.from(".slider",{
+    y:100,
+    duration:1,
+      opacity:0,
+      stagger:1,
+      scrollTrigger:{
+        trigger:".slider",
+        // scroll:"body",
+        scrub:2,
+        // markers:true,
+        start:"top 60%",
+        end:"top 30%"
+      }
+  })
+})
   return (
     <div id="projects">
         <h1 id="para">MY PROJECTS</h1>
@@ -18,7 +52,8 @@ function Projects() {
             {/* <Card title="MY ANIMATED PORTFOLIO"/> */}
         </div>
     </div>
-  )
+  )  
 }
 
 export default Projects
+ 

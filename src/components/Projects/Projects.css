@@ -6,6 +6,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 30px;
+    overflow: hidden;
 }
 
 .slider{
@@ -17,6 +18,7 @@
     overflow-y: hidden;
     gap: 30px;
     scrollbar-width: none;
+    padding: 20px;
 }
 
 #para{
@@ -24,4 +26,5 @@
     background: linear-gradient(to right,rgb(203, 53, 108),white);
     background-clip: text;
     color: transparent;
+    text-align: center;
 } 
