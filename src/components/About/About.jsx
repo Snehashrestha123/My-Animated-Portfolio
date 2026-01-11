@@ -64,8 +64,8 @@ function About(){
         // scroll:"body",
         scrub:2,
         // markers:true,
-        start:"top 60%",
-        end:"top 30%"
+        start:"top 70%",
+        end:"top 40%"
       }
   })
   gsap.from(".rightabout",{
@@ -82,6 +82,7 @@ function About(){
         end:"top 30%"
       }
   })
+  ScrollTrigger.refresh();
 })
 
   return (

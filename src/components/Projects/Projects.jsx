@@ -37,9 +37,10 @@ useGSAP(()=>{
         scrub:2,
         // markers:true,
         start:"top 60%",
-        end:"top 30%"
+        end:"top 50%"
       }
   })
+  ScrollTrigger.refresh();
 })
   return (
     <div id="projects">

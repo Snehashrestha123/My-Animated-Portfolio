@@ -36,6 +36,7 @@ function Contact() {
                 end:"top 30%"
             }
         })
+        ScrollTrigger.refresh();
     })
   return (
     <div id="contact">
