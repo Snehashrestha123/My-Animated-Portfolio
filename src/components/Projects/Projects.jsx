@@ -5,6 +5,8 @@ import portfolio from '../../assets/portfolio.png'
 import onlinefoodordering from '../../assets/onlinefoodordering.png'
 import restaurant from '../../assets/restaurant.png'
 import digitalclock from '../../assets/digitalclock.png'
+import drum from '../../assets/drum.png'
+import stopwatch from '../../assets/stopwatch.png'
 import {useGSAP} from "@gsap/react"
 import gsap from "gsap"
 import { ScrollTrigger } from 'gsap/all'
@@ -40,7 +42,7 @@ useGSAP(()=>{
         end:"top 50%"
       }
   })
-  ScrollTrigger.refresh();
+  ScrollTrigger.refresh(); 
 })
   return (
     <div id="projects">
@@ -50,7 +52,8 @@ useGSAP(()=>{
             <Card title="ONLINE FOOD ORDERING SYSTEM" image={onlinefoodordering}/>
             <Card title="RESTAURANT MANAGEMENT SYSTEM" image={restaurant}/>
             <Card title="SNEHA'S DIGITAL CLOCK" image={digitalclock}/>
-            {/* <Card title="MY ANIMATED PORTFOLIO"/> */}
+            <Card title="DRUM WEB" image={drum}/>
+            <Card title="STOP WATCH" image={stopwatch}/>
         </div>
     </div>
   )  
