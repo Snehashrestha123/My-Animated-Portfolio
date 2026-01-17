@@ -7,6 +7,9 @@ import restaurant from '../../assets/restaurant.png'
 import digitalclock from '../../assets/digitalclock.png'
 import drum from '../../assets/drum.png'
 import stopwatch from '../../assets/stopwatch.png'
+import stonee from '../../assets/stonee.png'
+import xoxoo from '../../assets/xoxoo.png'
+import clock from '../../assets/clock.png'
 import {useGSAP} from "@gsap/react"
 import gsap from "gsap"
 import { ScrollTrigger } from 'gsap/all'
@@ -54,6 +57,9 @@ useGSAP(()=>{
             <Card title="SNEHA'S DIGITAL CLOCK" image={digitalclock}/>
             <Card title="DRUM WEB" image={drum}/>
             <Card title="STOP WATCH" image={stopwatch}/>
+            <Card title="STONE PAPER SCISSOR" image={stonee}/>
+            <Card title="XOXO" image={xoxoo}/> 
+            <Card title="ANALOG CLOCK" image={clock}/> 
         </div>
     </div>
   )  
