@@ -7,6 +7,8 @@ nav{
     padding: 20px;
     position: fixed;
     top: 0;
+    z-index: 20;
+    background-color: rgb(17, 20, 23)
 }
 
 nav ul a{
@@ -23,7 +25,7 @@ nav ul a:hover{
     border-bottom:2px solid white;
 }
 
-ul{
+nav ul{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,6 +49,7 @@ nav h1{
     gap: 8px;
     flex-direction: column;
     display: none;
+    cursor: pointer;
 }
 
 .ham{
